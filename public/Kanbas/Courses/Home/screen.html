@@ -14,14 +14,16 @@
 <body>
     <div class="d-block d-md-none fa-2x" id="navbar">
         <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbarKanbasNav">
-                <span class="navbar-toggler-icon" style="color: grey"></span>
-            </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavbarCourseNav">
-                <i class="fa fa-chevron-down" style="color: grey"></i>
-            </button>
+            <!-- <div class="container-fluid"> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbarKanbasNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbarCourseNav">
+                    <i class="fa fa-chevron-down" style="color: grey"></i>
+                </button>
+            <!-- </div> -->
         </nav>
         <div class="collapse bg-white" id="collapsibleNavbarKanbasNav" data-bs-parent="#navbar">
             <ul class="wd-dropdown-navigation">
@@ -458,6 +460,83 @@
                             </span>
                         </li>
                     </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3> Course Status </h3>
+                </li>
+                <li class="list-group-item">
+                    <div class="btn-group-vertical">
+                        <div class="btn-group">
+                            <button class="btn btn-outline-dark" style="text-align:left">
+                                <i class="fa fa-ban"></i>
+                                Unpublish
+                            </button>
+                            <button class="btn btn-outline-dark" style="text-align:left; background: #66FF99;">
+                                <i class="fa fa-check-circle"></i>
+                                Publish
+                            </button>
+                        </div>
+                        <button class="btn btn-outline-dark" style="text-align:left">
+                            <i class="fa fa-upload"></i>
+                            Import Existing Content
+                        </button>
+                        <button class="btn btn-outline-dark" style="text-align:left">
+                            <i class="fa fa-share-square"></i>
+                            Import From Commons
+                        </button>
+                        <button class="btn btn-outline-dark" style="text-align:left">
+                            <i class="fa fa-home"></i>
+                            Choose Home Page
+                        </button>
+                        <button class="btn btn-outline-dark" style="text-align:left">
+                            <i class="fa fa-book"></i>
+                            Choose Course Stream
+                        </button>
+                        <button class="btn btn-outline-dark" style="text-align:left">
+                            <i class="fa fa-bullhorn"></i>
+                            New Announcement
+                        </button>
+                        <button class="btn btn-outline-dark" style="text-align:left">
+                            <i class="fa fa-bar-chart"></i>
+                            New Analytics
+                        </button>
+                        <button class="btn btn-outline-dark" style="text-align:left">
+                            <i class="fa fa-exclamation-circle"></i>
+                            View Course Notifications
+                        </button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4> To Do </h4>
+                    <hr />
+                    <div class="vstack">
+                        <div class="bg-light border">Grade A1 - ENV + HTML</div>
+                        <div class="bg-light border">Sept 18 at 11:59pm</div>
+                    </div>
+                <li class="list-group-item">
+                    <h4> Coming Up
+                        <i class="fa fa-calendar"></i>
+                        <a href="#">
+                            View
+                        </a>
+                    </h4>
+                    <hr />
+                    <i class="fa fa-calendar"></i>
+                    <a href="#">
+                        Lecture 1 - Sept 11 at 11am
+                    </a> <br />
+                    <i class="fa fa-calendar"></i>
+                    <a href="#">
+                        Lecture 2 - Sept 11 at 6pm
+                    </a> <br />
+                    <i class="fa fa-calendar"></i>
+                    <a href="#">
+                        Lecture 3 - Sept 11 at 7pm
+                    </a> <br />
                 </li>
             </ul>
         </div>
