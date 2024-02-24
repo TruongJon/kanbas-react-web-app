@@ -1,4 +1,4 @@
-.wd-kanbas-navigation {
+  .wd-kanbas-navigation {
     background-color: black;
     list-style: none;
     padding: 0px;  margin: 0px;
@@ -16,11 +16,17 @@
   }
   .wd-kanbas-navigation a {
     color: white;
-    text-decoration: none;
+    text-decoration-color: none;
   }
   .wd-kanbas-navigation a i {
     color: red;
     font-size: 2em;
     margin-bottom: 5px;
+  }
+  .account-color {
+    color: grey
+  }
+  .icon-color {
+    color: red
   }
   
