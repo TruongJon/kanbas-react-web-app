@@ -1,0 +1,398 @@
+[
+    {
+      "_id": "C1",
+      "name": "Week 1",
+      "description": "Week 1 overview",
+      "course": "COMM1112",
+      "lessons": [
+        {
+          "_id": "L101",
+          "name": "Introduction Discussion Board",
+          "description": "Review syllabus and introduce ourselves",
+          "module": "C1"
+        },
+        {
+          "_id": "L102",
+          "name": "Introduction Speech",
+          "description": "Give a 1-2 minute speech introducing yourself.",
+          "module": "C1"
+        }
+      ]
+    },
+    {
+      "_id": "C1",
+      "name": "Week 2",
+      "description": "Week 2 overview",
+      "course": "COMM1112",
+      "lessons": [
+        {
+          "_id": "L103",
+          "name": "Chapters 1 & 3",
+          "description": "Review textbook material",
+          "module": "C1"
+        },
+        {
+          "_id": "L104",
+          "name": "Photo Presentation",
+          "description": "Choose a photo that is meaningful to you and share it with the class.",
+          "module": "C1"
+        }
+      ]
+    },
+    {
+      "_id": "C1",
+      "name": "Week 3",
+      "description": "Review textbook material",
+      "course": "COMM1112",
+      "lessons": [
+        {
+          "_id": "L105",
+          "name": "Chapters 7 & 8",
+          "description": "Review textbook material",
+          "module": "C1"
+        },
+        {
+          "_id": "L106",
+          "name": "Informative Speech",
+          "description": "Give a 3-5 minute speech on the most underappreciated person in history.",
+          "module": "C1"
+        }
+      ]
+    },   
+    {
+        "_id": "C2",
+        "name": "Course Information",
+        "description": "Syllabus and course information",
+        "course": "CS3800",
+        "lessons": [
+          {
+            "_id": "L201",
+            "name": "Syllabus",
+            "description": "Syllabus",
+            "module": "C2"
+          },
+          {
+            "_id": "L202",
+            "name": "Scribe Notes",
+            "description": "Notes for all of the lectures.",
+            "module": "C2"
+          }
+        ]
+    },
+    {
+      "_id": "C2",
+      "name": "PS 1",
+      "description": "Problem set 1",
+      "course": "CS3800",
+      "lessons": [
+        {
+          "_id": "L203",
+          "name": "PS1.pdf",
+          "description": "PS1 PDF",
+          "module": "C2"
+        },
+        {
+          "_id": "L204",
+          "name": "PS1.tex",
+          "description": "PS1 LaTeX file.",
+          "module": "C2"
+        },
+        {
+          "_id": "L205",
+          "name": "PS1_sol.pdf",
+          "description": "PS1 Solutions.",
+          "module": "C2"
+        }
+      ]
+    },
+    {
+      "_id": "C2",
+      "name": "PS 2",
+      "description": "Problem set 2",
+      "course": "CS3800",
+      "lessons": [
+        {
+          "_id": "L206",
+          "name": "PS2.pdf",
+          "description": "PS2 PDF",
+          "module": "C2"
+        },
+        {
+          "_id": "L207",
+          "name": "PS2.tex",
+          "description": "PS2 LaTeX file.",
+          "module": "C2"
+        },
+        {
+          "_id": "L208",
+          "name": "PS2_sol.pdf",
+          "description": "PS2 Solutions.",
+          "module": "C2"
+        }
+      ]
+    },
+    {
+        "_id": "C3",
+        "name": "Plait",
+        "description": "Introduction to Plait",
+        "course": "CS4400",
+        "lessons": [
+          {
+            "_id": "L301",
+            "name": "Introduction and Overview",
+            "description": "Introduce Plait style programming.",
+            "module": "C3"
+          },
+          {
+            "_id": "L302",
+            "name": "Programming in Racket and Plait",
+            "description": "Review variables, lists, and recursive trees in Plait",
+            "module": "C3"
+          }
+        ]
+    },
+    {
+      "_id": "C3",
+      "name": "Syntax and semantics of calc and cond",
+      "description": "Review simple calc and ite implementations and how to extend them",
+      "course": "CS4400",
+      "lessons": [
+        {
+          "_id": "L303",
+          "name": "Syntax and semantics of calc",
+          "description": "Review syntax and semantics for a calc implementation.",
+          "module": "C3"
+        },
+        {
+          "_id": "L304",
+          "name": "s-expressions and conditionals",
+          "description": "Review s-exp and conditionals and how they are used in calc",
+          "module": "C3"
+        }
+      ]
+    },
+    {
+      "_id": "C3",
+      "name": "Syntax and semantics of let and func",
+      "description": "Review let and func usage in Plait",
+      "course": "CS4400",
+      "lessons": [
+        {
+          "_id": "L305",
+          "name": "Cond and let-binding",
+          "description": "Review an example of cond and let-binding in calc.",
+          "module": "C3"
+        },
+        {
+          "_id": "L306",
+          "name": "Lambda calculus I",
+          "description": "Introduce lambda calculus and Church encoding",
+          "module": "C3"
+        }
+      ]
+    },
+    {
+        "_id": "C4",
+        "name": "Resources",
+        "description": "Syllabus and class information",
+        "course": "CS4550",
+        "lessons": [
+          {
+            "_id": "L401",
+            "name": "Syllabus",
+            "description": "Class syllabus",
+            "module": "C4"
+          },
+          {
+            "_id": "L402",
+            "name": "Undergraduate Calendar",
+            "description": "Undergraduate calendar.",
+            "module": "C4"
+          }
+        ]
+    },
+    {
+      "_id": "C4",
+      "name": "Week 1",
+      "description": "Course plan for week 1.",
+      "course": "CS4550",
+      "lessons": [
+        {
+          "_id": "L403",
+          "name": "Chapter 1 - Introduction",
+          "description": "Introduction to the course.",
+          "module": "C4"
+        },
+        {
+          "_id": "L404",
+          "name": "Chapter - 2Creating User Interfaces with HTML",
+          "description": "Dev environment and creating a web application.",
+          "module": "C4"
+        },
+        {
+          "_id": "L405",
+          "name": "DEV ENV + HTML",
+          "description": "Implementing User Interfaces with HTML.",
+          "module": "C4"
+        }
+      ]
+    },
+    {
+      "_id": "C4",
+      "name": "Week 2 - Formatting User Interfaces with HTML",
+      "description": "Course plan for week 2",
+      "course": "CS4550",
+      "lessons": [
+        {
+          "_id": "L406",
+          "name": "Deploy the assignment on Netlify",
+          "description": "Learn how to use Netlify.",
+          "module": "C4"
+        },
+        {
+          "_id": "L407",
+          "name": "CSS + BOOTSTRAP",
+          "description": "Styling pages with CSS.",
+          "module": "C4"
+        }
+      ]
+    },
+    {
+        "_id": "C5",
+        "name": "Week 1",
+        "description": "Course plan for week 1.",
+        "course": "CS3700",
+        "lessons": [
+          {
+            "_id": "L501",
+            "name": "Socket Basics",
+            "description": "Get started writing code using network sockets",
+            "module": "C5"
+          }
+        ]
+    },
+    {
+      "_id": "C5",
+      "name": "Week 2",
+      "description": "Course plan for week 2.",
+      "course": "CS3700",
+      "lessons": [
+        {
+          "_id": "L502",
+          "name": "FTP Client",
+          "description": "Implement a real protocol using two sockets.",
+          "module": "C5"
+        }
+      ]
+    },
+    {
+      "_id": "C5",
+      "name": "Week 3",
+      "description": "Course plan for week 3.",
+      "course": "CS3700",
+      "lessons": [
+        {
+          "_id": "L503",
+          "name": "BGP Router",
+          "description": "Manage multiple sockets in a simulated network",
+          "module": "C5"
+        }
+      ]
+    },
+    {
+      "_id": "C6",
+      "name": "Week 1",
+      "description": "Course plan for week 1.",
+      "course": "CS4530",
+      "lessons": [
+        {
+          "_id": "L601",
+          "name": "From Requirements to Code",
+          "description": "In this lecture, you will learn to explain the basics of the Test-Driven Design and develop simple applications using Typescript and Jest",
+          "module": "C6"
+        }
+      ]
+    },
+    {
+      "_id": "C6",
+      "name": "Week 2",
+      "description": "Course plan for week 2.",
+      "course": "CS4530",
+      "lessons": [
+        {
+          "_id": "L602",
+          "name": "Code-Level Design Principles",
+          "description": "This lecture is about writing code that other people will be able to understand, reuse, and modify. We’ve distilled this down to five general program-design principles.",
+          "module": "C6"
+        }
+      ]
+    },
+    {
+      "_id": "C6",
+      "name": "Week 3",
+      "description": "Course plan for week 3.",
+      "course": "CS4530",
+      "lessons": [
+        {
+          "_id": "L603",
+          "name": "Interaction-Level Design Patterns",
+          "description": "We will see that using such patterns makes OO code more readable and modifiable.",
+          "module": "C6"
+        }
+      ]
+    },
+    {
+      "_id": "C7",
+      "name": "Course Materials",
+      "description": "Syllabus and schedule",
+      "course": "ENGW3302",
+      "lessons": [
+        {
+          "_id": "L701",
+          "name": "Syllabus and schedule",
+          "description": "Syllabus and schedule",
+          "module": "C7"
+        }
+      ]
+    },
+    {
+      "_id": "C7",
+      "name": "Course Resources",
+      "description": "Course resources",
+      "course": "ENGW3302",
+      "lessons": [
+        {
+          "_id": "L702",
+          "name": "Course",
+          "description": "Course Resources",
+          "module": "C7"
+        },
+        {
+          "_id": "L703",
+          "name": "Questions about the Class",
+          "description": "Questions about the class",
+          "module": "C7"
+        },
+        {
+          "_id": "L704",
+          "name": "MLA Format Basics",
+          "description": "MLA format basics",
+          "module": "C7"
+        }
+      ]
+    },
+    {
+      "_id": "C7",
+      "name": "Project 1 Overview",
+      "description": "Project 1 overview",
+      "course": "ENGW3302",
+      "lessons": [
+        {
+          "_id": "L705",
+          "name": "Annotated Bibliography",
+          "description": "Annotated bibliography",
+          "module": "C7"
+        }
+      ]
+    }
+]
