@@ -28,7 +28,7 @@ function Dashboard() {
                       fontWeight: "bold",
                     }}
                   >
-                    {course.name}{" "}
+                    {course.number}{" "}{"01 SP24"}
                   </Link>
                   <p className="card-text">{course.name}</p>
                   <Link

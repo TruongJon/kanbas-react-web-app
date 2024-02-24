@@ -9,6 +9,7 @@ function Assignments() {
     (assignment) => assignment.course === courseId);
   return (
     <>
+    <h2> Assignments </h2>
     <div className="button-container">
         <form id="text-fields">
             <input id="text-fields-assignment-names" placeholder="Search for Assignments" />
