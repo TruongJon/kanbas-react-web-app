@@ -34,7 +34,19 @@ function ModuleList() {
           </button>
       </div>
       <hr />
-      <li className="list-group-item">
+      <input
+        className="form-control"
+        value={module.name}
+        onChange={(e) =>
+          dispatch(setModule({ ...module, name: e.target.value }))
+        }/>
+      <textarea
+        className="form-control"
+        value={module.description}
+        onChange={(e) =>
+          dispatch(setModule({ ...module, description: e.target.value }))
+        }/>
+      <div className="button-container"> 
         <button
           onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
           Add
@@ -43,36 +55,30 @@ function ModuleList() {
           onClick={() => dispatch(updateModule(module))}>
           Update
         </button>
-        <input
-          value={module.name}
-          onChange={(e) =>
-            dispatch(setModule({ ...module, name: e.target.value }))
-          }/>
-        <textarea
-          value={module.description}
-          onChange={(e) =>
-            dispatch(setModule({ ...module, description: e.target.value }))
-          }/>
-      </li>
+      </div>
       <ul className="list-group wd-modules">
       {moduleList
         .filter((module) => module.course === courseId)
         .map((module, index) => (
           <li key={index}
             className="list-group-item">
-            <button
-              onClick={() => dispatch(setModule(module))}>
-              Edit
-            </button>
-            <button
-              onClick={() => dispatch(deleteModule(module._id))}>
-              Delete
-            </button>
             <div>
               <FaEllipsisV className="me-2" />
-              {module.name}
+              {module.name} - {module.description}
               <span className="float-end">
-                <FaCheckCircle className="text-success" />
+                <button
+                  onClick={() => dispatch(setModule(module))}
+                  className="btn btn-danger me-2 px-1"
+                >
+                  Edit
+                </button>
+                <button
+                  onClick={() => dispatch(deleteModule(module._id))}
+                  className="btn btn-danger mr-2 px-1"
+                >
+                  Delete
+                </button>
+                <FaCheckCircle className="text-success me-1" />
                 <FaPlusCircle className="ms-2" />
                 <FaEllipsisV className="ms-2" />
               </span>
