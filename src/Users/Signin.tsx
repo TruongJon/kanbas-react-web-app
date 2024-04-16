@@ -2,14 +2,19 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { User } from "./client";
 import * as client from "./client";
+
 export default function Signin() {
   const [credentials, setCredentials] = useState<User>({ _id: "",
     username: "", password: "", firstName: "", lastName: "", role: "USER"
   });
   const navigate = useNavigate();
   const signin = async () => {
-    await client.signin(credentials);
-    navigate("/Kanbas/Account/Profile");
+    try {
+      await client.signin(credentials);
+      navigate("/Kanbas/Account/Profile");
+    } catch (err) {
+        alert("Login credentials are invalid.");
+    }
   };
   return (
     <div>
@@ -21,6 +26,7 @@ export default function Signin() {
           setCredentials({ ...credentials, password: e.target.value })}/>
       </div>
       <button className="btn btn-primary" onClick={signin}> Sign In </button>
+      <button className="btn btn-warning" onClick={() => navigate("/Kanbas/Account/Signup")}> Click here to register </button>
     </div>
   );
 }

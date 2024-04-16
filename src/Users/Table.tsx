@@ -51,11 +51,22 @@ export default function UserTable() {
       <table className="table">
         <thead>
           <tr>
+            <th>Credentials</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Role</th>
+            <th>&nbsp;</th>
+          </tr>
+          <tr>
             <td>
-              <input value={user.password} onChange={(e) =>
-                setUser({ ...user, password: e.target.value })}/>
-              <input value={user.username} onChange={(e) =>
+              <input value={user.username} 
+                placeholder="Username"
+                onChange={(e) =>
                 setUser({ ...user, username: e.target.value })}/>
+              <input value={user.password} 
+                placeholder="Password"
+                onChange={(e) =>
+                setUser({ ...user, password: e.target.value })}/>
             </td>
             <td>
               <input value={user.firstName} onChange={(e) =>
@@ -74,7 +85,16 @@ export default function UserTable() {
                 <option value="STUDENT">Student</option>
               </select>
             </td>
-            <th>&nbsp;</th>
+            <td className="text-nowrap">
+              <BsFillCheckCircleFill
+                onClick={updateUser}
+                className="me-2 text-success fs-1 text"
+              />
+              <BsPlusCircleFill
+                onClick={createUser}
+                className="text-success fs-1 text"
+              />
+            </td>
           </tr>
         </thead>
         <tbody>
