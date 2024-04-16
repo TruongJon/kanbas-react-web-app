@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import Account from "./Account";
 import KanbasNavigation from "./Navigation";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
@@ -7,13 +8,14 @@ import { Provider } from "react-redux";
 import store from "./store";
 import axios from "axios";
 
+const API_BASE = process.env.REACT_APP_API_BASE;
 function Kanbas() {
   const [courses, setCourses] = useState<any[]>([]);
   const [course, setCourse] = useState({
     _id: "1234", name: "New Course", number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  const COURSES_API = "http://localhost:4000/api/courses";
+  const COURSES_API = `${API_BASE}/api/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(COURSES_API);
     setCourses(response.data);
@@ -53,7 +55,7 @@ function Kanbas() {
     <div style={{ flexGrow: 1}}>
       <Routes>
         <Route path="/" element={<Navigate to="Dashboard" />} />
-        <Route path="Account" element={<h1>Account</h1>} />
+        <Route path="Account/*" element={<Account />} />
         <Route path="Dashboard" element={
           <Dashboard
             courses={courses}
