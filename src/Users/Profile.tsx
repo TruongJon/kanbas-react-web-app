@@ -6,8 +6,12 @@ export default function Profile() {
     firstName: "", lastName: "", dob: "", email: "", role: "USER" });
   const navigate = useNavigate();
   const fetchProfile = async () => {
-    const account = await client.profile();
-    setProfile(account);
+    try {
+      const account = await client.profile();
+      setProfile(account);
+    } catch (err) {
+      navigate("/Kanbas/Account/Signin");
+    }
   };
   const save = async () => {
     await client.updateUser(profile);
